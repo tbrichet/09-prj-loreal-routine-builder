@@ -5,6 +5,13 @@
   padding: 0;
 }
 
+:root {
+  --brand-primary: #000000;
+  --brand-secondary: #ffffff;
+  --brand-tertiary: #ff0038;
+  --brand-accent: #E3a535;
+}
+
 /* —— body + fonts —— */
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
@@ -113,7 +120,7 @@ body {
 
 .chat-form button {
   font-size: 18px;
-  background: #000;
+  background: var(--brand-accent);
   color: #fff;
   border: none;
   padding: 12px;
@@ -213,6 +220,11 @@ body {
   color: #666;
 }
 
+/* Highlight selected product */
+.product-card.selected {
+  border: 2px solid var(--brand-accent);
+}
+
 /* selected products */
 .selected-products {
   margin: 40px 0;
@@ -239,7 +251,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #fff;
-  background: #000;
+  background: var(--brand-accent);
   border: none;
   border-radius: 8px;
   cursor: pointer;
